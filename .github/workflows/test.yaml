@@ -23,3 +23,7 @@ jobs:
           pwd
           npm install
           ls -la
+          cd /usr
+          ls -la
+          cd /usr/local/share
+          ls -la
