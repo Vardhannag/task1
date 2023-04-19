@@ -19,10 +19,7 @@ jobs:
           node-version: 16.x
       - name: build using npm
         run: |
-          mkdir app && \
           ls -la
           pwd
-          cp package*.json /app
-          cd app
+          npm install
           ls -la
-          pwd
