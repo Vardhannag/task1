@@ -19,6 +19,10 @@ jobs:
           node-version: 16.x
       - name: build using npm
         run: |
-           cp test.txt .
-           pwd
-           ls -la
+          mkdir /app && \
+          chown -R node:node /app && \
+          chmod 755 /app
+          cp test.txt ./
+          ls -la
+          pwd
+          chown -R node:node test.txt
