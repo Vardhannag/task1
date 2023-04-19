@@ -20,6 +20,9 @@ jobs:
       - name: build using npm
         run: |
           mkdir app && \
+          ls -la
+          pwd
+          awk -F':' '{ print $1}' /etc/passwd
           chown -R node:node app && \
           chmod 755 app
           cp test.txt ./
